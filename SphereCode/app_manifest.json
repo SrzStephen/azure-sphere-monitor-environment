@@ -1,0 +1,20 @@
+{
+    "SchemaVersion": 1,
+    "Name": "MonitorEnvironment",
+    "ComponentId": "685f13af-25a5-40b2-8dd8-8cbc253ecbd8",
+    "EntryPoint": "/bin/app",
+    "CmdArgs": [ "MonitorEnvironment" ],
+    "Capabilities": {
+        "MutableStorage": { "SizeKB": 16 },
+        "AllowedConnections": [ "XXXX.azure-devices.net" ],
+        "AllowedTcpServerPorts": [],
+        "AllowedUdpServerPorts": [],
+        "Gpio": [ 16, 0 ],
+        "Uart": [ "ISU0", "ISU1" ],
+        "I2cMaster": [ "ISU2" ],
+        "SpiMaster": [],
+        "WifiConfig": true,
+        "NetworkConfig": false,
+        "SystemTime": false
+    }
+}
