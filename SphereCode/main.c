@@ -65,7 +65,7 @@ static int DirectMethodCall(const char *methodName, const char *payload, size_t 
 	// there is only one method supported "polltime" that should look like { "polltime":5 }
 	Log_Debug("\nDirect Method called %s\n", methodName);
 	Log_Debug("\nPayload %s/n", payload);
-	if (!strcmp(payload, "polltime"))
+	if (!strcmp(methodName, "polltime"))
 	{
 		static const char response[] =
 			"{ \"success\" : false, \"message\" : \"Unknown method\" }";
